@@ -1,0 +1,289 @@
+/*variables*/
+*body {
+  font: 100% Helvetica, sans-serif;
+}
+/*variables*/
+
+/*label logo*/
+label.logo{
+  color: white;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+  font-weight: bold;
+}
+/*label logo*/
+
+/*navbar*/
+nav {
+  display: block;
+  background-color: #0a0a0a;
+
+}
+nav ul {
+  margin: auto;
+  overflow: hidden;
+}
+
+nav ul li {
+ display: inline-block;
+ margin: auto;
+}
+
+nav ul li a{
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+ background-color: #8ad4d1;
+ transition: .5s;
+}
+
+.active {
+ background-color: #a66a7e;
+}
+/*navbar*/
+
+.checkbtn {
+font-size: 25px;
+float: right;
+line-height: 30px;
+margin-right: 20px;
+color: white;
+display: none;
+cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+*::selection {
+    color: #8ad4d1;
+    background: #0a0a0a
+  }
+.item1::selection{
+  color: #8ad4d1;
+  background-color: #0a0a0a;
+}
+
+.alert{
+  margin: 0px;
+}
+
+section{
+  background: url(https://www.itl.cat/pngfile/big/97-970441_awesome-soft-pink-background-wall-mural-pixers.jpg) no-repeat;
+  background-size: cover;
+}
+
+.img-fluid{
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+
+.table{
+  display: grid;
+  background-color: white;
+  border-radius: 4vh;
+  justify-content: center;
+}
+
+
+ .row {
+  border-bottom: 2px solid black;
+  padding: 70px;
+  margin: 10px;
+  justify-content: justify;
+}
+
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  font-size: 25px;
+}
+.grid p{
+  font-size: 25px;
+}
+
+.item1{
+  display: block;
+  background: white;
+  margin-left: 30px;
+  margin-top: 40px;
+  margin-bottom: auto;
+  margin-right: 0px;
+  padding: 30px;
+  padding-top: 50px;
+  border-radius: 5vh;
+  font-size: 20px;
+}
+h1{
+  font-size: 40px;
+  font-style: bold;
+  color: #d197aa;
+  text-transform: uppercase;
+  font-family: Verdana;
+}
+h2{
+  font-size: 35px;
+  color: #d197aa;
+  font-family: Verdana, sans-serif;
+}
+h4{
+  font-size: 25px;
+  text-align: left;
+}
+h5{
+  text-transform: uppercase;
+  font: bold;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+.item2{
+  display: block;
+  background: white;
+  margin: 40px;
+  margin-left: 30px;
+  padding: 5%;
+  padding-top: 70px;
+  border-radius: 5vh;
+  text-align: justify;
+  color: #8ad4d1;
+}
+
+.item3 th, td {
+    border: 2px solid black;
+    text-align:center;
+
+}
+
+.item3 th {
+  background-color: #d197aa;
+  color: black;
+  font-family: Arial, Helvetica;
+}
+
+span {
+  text-transform: bold;
+  color: #d197aa;
+  text-transform: uppercase;
+}
+
+.footer-social {
+  text-align:center;
+  background-color: black;
+  margin: 0px;
+  padding: 25px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+@media(max-width: 800px){
+  label.logo{
+    font-size: 30px;
+  }
+ nav ul li a{
+   font-size: 20px;
+ }
+
+ .checkbtn {
+   display: block;
+ }
+  .nav-items {
+   background: black;
+   top: 50px;
+   left: -100%;
+   text-align: center;
+   padding-left: 0;
+   transition: all .5s;
+   width:100%;
+   height: 100vh;
+   position: absolute;
+   z-index: 1000;
+
+ }
+ nav ul li{
+   display: block;
+   margin: 45px 0;
+ }
+ nav ul li a{
+   font-size: 16px;
+   text-transform: uppercase;
+ }
+ #check:checked ~ ul {
+   left: 0;
+ }
+
+.table{
+  width: 85%;
+}
+.grid{
+  grid-template-columns: 100%
+  }
+.item1{
+  display: none;
+}
+.item2{
+  margin-bottom:auto;
+}
+
+h1{
+       font-size: 27px;
+       text-transform: uppercase;
+     }

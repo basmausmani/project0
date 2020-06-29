@@ -1,0 +1,43 @@
+/*nesting*/
+nav{
+ ul {
+  margin: auto;
+  overflow: hidden;
+  background-color: solidblack;
+}
+
+  ul li {
+ display: inline-block;
+ margin: auto;
+}
+
+  ul li a{
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+ background-color: #111;
+ transition: .5s;
+}
+}
+/*nesting*/
+
+/*inheritance*/
+.alert{
+  margin: 0px;
+}
+/*inheritance*/
+
+/*variables*/
+$ff: Arial, Helvetica, sans-serif;
+  body {
+    font: $ff;
+}
+/*variables*/
